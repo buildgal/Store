@@ -11,8 +11,6 @@ function Signin() {
         <div className="img-container">
         </div>
         <div className="content">
-          <ul>
-          </ul>
         </div>
       </div>
     );
