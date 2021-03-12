@@ -1,18 +1,79 @@
-import React from "react";
+import React, { Component } from "react";
 import "./signin.scss";
-//import img from "signin.png"
-//import Navbar from "./components/Navbar";
 
+export default class Login extends Component {
+  constructor(props) {
+    super(props);
 
-function Signin() {
+    this.state = {
+      email: "",
+      password: "",
+      loginErrors: ""
+    };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+  }
+
+  handleSubmit(event) {
+    // const { email, password } = this.state;
+    // axios
+    // .post(
+    //   "http://localhost:3001/sessions",
+    //   {
+    //     user: {
+    //       email: email, 
+    //       password: password,
+    //     }
+    //   },
+    // )
+    //   .then(response => {
+    //     console.log('response from login', response);
+    //     // if (response.data.status === "created") {
+    //     //   this.props.handleSuccessAuth(response)
+    //     // }
+    //   })
+    //   .catch(error => {
+    //     console.log('login error', error);
+    //   });
+    //   event.preventDefault();
+  }
+
+  render() {
     return (
-         
-        <div className="card">
-        <div className="img-container">
-        </div>
-        <div className="content">
-        </div>
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={this.state.email}
+          onChange={this.handleChange}
+          required
+          />
+          <button type="submit">Login</button>
+        </form>
       </div>
     );
+  }
 }
-  export default Signin
+
+
+// function Signin() {
+//     return (
+         
+//         <div className="login">
+//            <div className="login">
+//         </div>
+//         <div className="content">
+//         </div>
+//       </div>
+//     );
+// }
+//   export default Signin
