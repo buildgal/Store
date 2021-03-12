@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="stylesheet.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -48,34 +49,65 @@
       </nav>
 <!--Buttons-->
 
-<button type="button" class="btn btn-info">Add Rewview</button>
+<button type="button" class="btn btn-info">Add Review</button>
 
 
 <!-- Example single danger button -->
 <div class="btn-group">
     <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Action
+      Sort Reviews
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
+      <a class="dropdown-item" href="#">Ratings 5-1</a>
+      <a class="dropdown-item" href="#">Ratings 1-5</a>
+      <a class="dropdown-item" href="#">Date</a>
     </div>
   </div>
 
 <!--RATING STARS -->
-<div class="rating stars">
+<!--Buttons Add an image -->
 
-    <i class="far fa-star"></i>
-    <i class="far fa-star"></i>
-    <i class="far fa-star"></i>
-    <i class="far fa-star"></i>
-    <i class="far fa-star"></i>
-    <i class="far fa-star"></i>
+<button type="button" class="btn btn-info">Add a star</button>
+<div class="ratings">
+
+    <i class="fa fa-star fa-lg"></i>
+    <i class="fa fa-star fa-lg"></i>
+    <i class="fa fa-star fa-lg"></i>
+    <i class="fa fa-star fa-lg"></i>
+    <i class="fa fa-star fa-lg"></i>
 
 </div>
+
+<!-- Comment title and comment text-->
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Title</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Add a comment</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="How was your experience with Buying Banksy?" rows="3"></textarea>
+</div>
+<!--Category-->
+<div class="btn-group">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Category
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Website</a>
+    <a class="dropdown-item" href="#">Quality</a>
+    <a class="dropdown-item" href="#">Shipping</a>
+    <a class="dropdown-item" href="#">Other</a>
+  </div>
+</div>
+
+
+<!--Buttons Add an image -->
+
+<button type="button" class="btn btn-info">Add an image</button>
+
+<!--Buttons Submit Review -->
+
+<button type="button" class="btn btn-info">Submit Review</button>
 
 
 
