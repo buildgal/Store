@@ -11,7 +11,9 @@ function App() {
       method: "POST",
       url: "http://localhost:8000/api/googlelogin",
       data: {tokenId: response.tokenId}
-    })
+    }).then(response => {
+      console.log(response);
+    });
   }
 
   const responseErrorGoogle = (response) => {
